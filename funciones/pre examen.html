@@ -1,0 +1,531 @@
+<script>
+
+    var elegir = prompt("Que desea calcular");
+       
+    var alumno_1 = {
+        "nombre" : "Juan",
+        "Matricula" : 0123,
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: "8",
+    }
+    var alumno_2 = {
+        "Nombre" : "Pepe",
+        "Matricula" : "0234",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: "7",
+    }
+    var alumno_3 = {
+        "Nombre" : "Marcos",
+        "Matricula" : "0345",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: "6",
+    }
+    var alumno_4 = {
+        "Nombre" : "Moises",
+        "Matricula" : "0456",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: "9",
+    }
+    var alumno_5 = {
+        "Nombre" : "adrian",
+        "Matricula" : "0567",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: "10",
+    }
+    var alumno_6 = {
+        "Nombre" : "manuel",
+        "Matricula" : "0678",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: "7",
+    }
+    var alumno_7 = {
+        "Nombre" : "Angel",
+        "Matricula" : "0789",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: "8",
+    }
+    var alumno_8 = {
+        "Nombre" : "Luis",
+        "Matricula" : "0891",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: "6",
+    }
+    var alumno_9 = {
+        "Nombre" : "Erick",
+        "Matricula" : "0901",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        "Calificacion": "8",
+    }
+    var alumno_10 = {
+        "Nombre" : "Mendoza",
+        "Matricula" : "0902",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        "Calificacion": "8",
+    }
+    var alumno_11 = {
+        "Nombre" : "Gutierrez",
+        "Matricula" : "0903",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        "Calificacion": "10",
+    }
+    var alumno_12 = {
+        "Nombre" : "Abigail",
+        "Matricula" : "0904",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        "Calificacion": "10",
+    }
+    var alumno_13 = {
+        "Nombre" : "Monica",
+        "Matricula" : "0905",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        "Calificacion": "5",
+    }
+    var alumno_14 = {
+        "Nombre" : "Elizabeth",
+        "Matricula" : "0906",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        "Calificacion": "8",
+    }
+    var alumno_15 = {
+        "Nombre" : "Fernanda",
+        "Matricula" : "0907",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        "Calificacion": "6",
+    }
+    var alumno_16 = {
+        "Nombre" : "Guadalupe",
+        "Matricula" : "0908",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        "Calificacion": "7",
+    }
+    var alumno_17 = {
+        "Nombre" : "Marina",
+        "Matricula" : "0909",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        "Calificacion": "8",
+    }
+    var alumno_18 = {
+        "Nombre" : "Alicia",
+        "Matricula" : "0911",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        "Calificacion": "7",
+    }
+    var alumno_19 = {
+        "Nombre" : "casandra",
+        "Matricula" : "0912",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        "Calificacion": "10",
+    }
+    var alumno_20 = {
+        "Nombre" : "Araceli",
+        "Matricula" : "0913",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        "Calificacion": "5",
+    } 
+    var alumno_21 = {
+        "Nombre" : "Daniel",
+        "Matricula" : "0914",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        "Calificacion": "8",
+    }
+    var alumno_22 = {
+        "Nombre" : "Jireht",
+        "Matricula" : "0915",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        "Calificacion": "8",
+    }
+    var alumno_23 = {
+        "Nombre" : "Teresa",
+        "Matricula" : "0952",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        "Calificacion": "8",
+    }
+    var alumno_24 = {
+        "Nombre" : "Rodrigo",
+        "Matricula" : "0916",
+        "grupo" : "1414IJ",
+        "Sexo" : 0,
+        "Calificacion": "8",
+    }
+    var alumno_25 = {
+        "Nombre" : "Keyli",
+        "Matricula" : "0953",
+        "grupo" : "1414IJ",
+        "Sexo" : 0,
+        "Calificacion": "9",
+    }
+    switch (elegir) {
+        case "Numero de alumnos":
+            numeroDeAlumnos();
+        break;
+        case "Alumnos por genero":
+            alumnosPorGenero();
+            break;
+        case "Media de calificaciones":
+            mediaDeCalificaciones();
+        break;
+        case "Alumno":
+            alumnoEspecifico();
+        break;
+        case "Conjunto de alumnos":
+            conjuntoDeAlumnos();
+        break;
+        case "Informacion por grupos":
+            informacionGrupos();
+        break;
+    
+    }
+    
+    
+    function numeroDeAlumnos(informacionGrupos) {
+      let contador = 0;
+      for (let i = 0; i < informacionGrupos.length; i++){
+          contador +=1;
+      } 
+    }
+    
+    function alumnosPorGenero(informacionGrupos) {
+      let contador1 = 0;
+      let contador2 = 0;
+      for(let i = 0; i < informacionGrupos.length; i++){
+       if(informacionGrupos[i].alumnosPorGenero == "Hombre"){
+           contador1 += 1;
+       }else{
+           contador2 += 1;
+       }
+      }
+    }
+    
+    function mediaDeCalificaciones(params) {
+        var calif = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let sum = 0;
+    for( let i = 0; i < calif.length; i++ ){
+    sum += parseInt( calif[i], 10 ); 
+}
+console.log("El promedio de todos los elementos es:" + sum / 1 );  
+    }
+    
+    function alumnoEspecifico() {
+    
+        var consulta = prompt("Ingrese la matricula del alumno");
+        
+            if (consulta == "0123"){
+               console.log(alumno_1)
+            }
+            if (consulta == "0234"){
+                console.log(alumno_2)
+            }
+            if (consulta == "0345"){
+                console.log(alumno_3)
+            }
+            if (consulta == "0345"){
+                console.log(alumno_4)
+            }
+            if (consulta == "0567"){
+                console.log(alumno_5)   
+            }
+            if (consulta == "0678"){
+                console.log(alumno_6)      
+            }
+            if (consulta == "0789"){
+                console.log(alumno_7)     
+            }
+            if (consulta == "0891"){
+                console.log(alumno_8)      
+            }
+            if (consulta == "0901"){
+                console.log(alumno_9)     
+            }
+            if (consulta == "0902"){
+                console.log(alumno_10)      
+            }
+            if (consulta == "0903"){
+                console.log(alumno_11)      
+            }
+            if (consulta == "0904"){
+                console.log(alumno_12)     
+            }
+            if (consulta == "0905"){
+                console.log(alumno_13)      
+            }
+            if (consulta == "0906"){
+                console.log(alumno_14)      
+            }
+            if (consulta == "0907"){
+                console.log(alumno_15)      
+            }
+            if (consulta == "0908"){
+                console.log(alumno_16)      
+            }
+            if (consulta == "0909"){
+                console.log(alumno_17)      
+            }
+            if (consulta == "0911"){
+                console.log(alumno_18)      
+            }
+            if (consulta == "0912"){
+                console.log(alumno_19)      
+            }
+            if (consulta == "0913"){
+                console.log(alumno_20)      
+            }
+            if (consulta == "0914"){
+                console.log(alumno_21)      
+            }
+            if (consulta == "0915"){
+                console.log(alumno_22)      
+            }
+            if (consulta == "0952"){
+                console.log(alumno_23)      
+            }
+            if (consulta == "0916"){
+                console.log(alumno_24)     
+            }
+            if (consulta == "0953"){
+                console.log(alumno_25)       
+            }
+    }
+    
+    function conjuntoDeAlumnos(params) {
+        
+    }
+    
+    function informacionGrupos() {
+        var alumno_1 = {
+        "nombre" : "Juan",
+        "Matricula" : "0123",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_2 = {
+        "Nombre" : "Pepe",
+        "Matricula" : "0234",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: 7,
+    }
+    var alumno_3 = {
+        "Nombre" : "Marcos",
+        "Matricula" : "0345",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: 6,
+    }
+    var alumno_4 = {
+        "Nombre" : "Moises",
+        "Matricula" : "0456",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: 9,
+    }
+    var alumno_5 = {
+        "Nombre" : "adrian",
+        "Matricula" : "0567",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: 10,
+    }
+    var alumno_6 = {
+        "Nombre" : "manuel",
+        "Matricula" : "0678",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: 7,
+    }
+    var alumno_7 = {
+        "Nombre" : "Angel",
+        "Matricula" : "0789",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_8 = {
+        "Nombre" : "Luis",
+        "Matricula" : "0891",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: 6,
+    }
+    var alumno_9 = {
+        "Nombre" : "Erick",
+        "Matricula" : "0901",
+        "grupo" : "1212IM",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_10 = {
+        "Nombre" : "Mendoza",
+        "Matricula" : "0902",
+        "grupo" : "1313IS",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_11 = {
+        "Nombre" : "Gutierrez",
+        "Matricula" : "0903",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        Calificacion: 10,
+    }
+    var alumno_12 = {
+        "Nombre" : "Abigail",
+        "Matricula" : "0904",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        Calificacion: 10,
+    }
+    var alumno_13 = {
+        "Nombre" : "Monica",
+        "Matricula" : "0905",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        Calificacion: 5,
+    }
+    var alumno_14 = {
+        "Nombre" : "Elizabeth",
+        "Matricula" : "0906",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        Calificacion: 8,
+    }
+    var alumno_15 = {
+        "Nombre" : "Fernanda",
+        "Matricula" : "0907",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        Calificacion: 6,
+    }
+    var alumno_16 = {
+        "Nombre" : "Guadalupe",
+        "Matricula" : "0908",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        Calificacion: 7,
+    }
+    var alumno_17 = {
+        "Nombre" : "Marina",
+        "Matricula" : "0909",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        Calificacion: 8,
+    }
+    var alumno_18 = {
+        "Nombre" : "Alicia",
+        "Matricula" : "0911",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        Calificacion: 7,
+    }
+    var alumno_19 = {
+        "Nombre" : "casandra",
+        "Matricula" : "0912",
+        "grupo" : "1313IS",
+        "Sexo" : 0,
+        Calificacion: 10,
+    }
+    var alumno_20 = {
+        "Nombre" : "Araceli",
+        "Matricula" : "0913",
+        "grupo" : "1212IM",
+        "Sexo" : 0,
+        Calificacion: 5,
+    } 
+    var alumno_21 = {
+        "Nombre" : "Daniel",
+        "Matricula" : "0914",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_22 = {
+        "Nombre" : "Jireht",
+        "Matricula" : "0915",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_23 = {
+        "Nombre" : "Teresa",
+        "Matricula" : "0952",
+        "grupo" : "1414IJ",
+        "Sexo" : 1,
+        Calificacion: 8,
+    }
+    var alumno_24 = {
+        "Nombre" : "Rodrigo",
+        "Matricula" : "0916",
+        "grupo" : "1414IJ",
+        "Sexo" : 0,
+        Calificacion: 8,
+    }
+    var alumno_25 = {
+        "Nombre" : "Keyli",
+        "Matricula" : "0953",
+        "grupo" : "1414IJ",
+        "Sexo" : 0,
+        Calificacion: 9,
+    }
+        var Grupo = prompt("Ingrese el numero de grupo")
+            if (Grupo == 1212){
+                console.log(alumno_1)
+                console.log(alumno_3)
+                console.log(alumno_5)
+                console.log(alumno_7)
+                console.log(alumno_9)
+                console.log(alumno_12)
+                console.log(alumno_14)
+                console.log(alumno_16)
+                console.log(alumno_18)
+                console.log(alumno_20)
+            }
+            if(Grupo == 1313){
+                console.log(almno_2)
+                console.log(alumno_4)
+                console.log(alumno_6)
+                console.log(alumno_8)
+                console.log(alumno_10)
+                console.log(alumno_11)
+                console.log(alumno_13)
+                console.log(alumno_15)
+                console.log(alumno_17)
+                console.log(alumno_19)
+            }
+        
+            if(Grupo == 1414){
+                console.log(alumno_21)
+                console.log(alumno_22)
+                console.log(alumno_23)
+                console.log(alumno_24)
+                console.log(alumno_25)
+                
+            }  
+    }    
+    
+    
+    
+    
+    </script>
